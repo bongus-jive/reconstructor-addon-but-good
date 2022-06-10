@@ -1,0 +1,37 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/animatedParts/parts/chassis/partStates/stage/reconstructor/properties/image",
+    "value" : "craftinganvil3lit.png:<color>"
+  },
+  {
+    "op" : "add",
+    "path" : "/animatedParts/stateTypes/stage/states/craftinganvil3/properties/lightsOff/-",
+    "value" : "reconstructorglow"
+  },
+  {
+    "op" : "move",
+    "from" : "/animatedParts/stateTypes/stage/states/reconstructor/properties/lightsOn",
+    "path" : "/animatedParts/stateTypes/stage/states/reconstructor/properties/lightsOff"
+  },
+  {
+    "op" : "add",
+    "path" : "/animatedParts/stateTypes/stage/states/reconstructor/properties/lightsOn",
+    "value" : ["reconstructorglow"]
+  },
+  {
+    "op" : "add",
+    "path" : "/lights/reconstructorglow",
+    "value" : {
+      "active" : false,
+      "color" : [176, 0, 23],
+      "position" : [0, 2],
+
+      "flickerPeriod" : 0.9,
+      "flickerMinIntensity" : 0.75,
+      "flickerMaxIntensity" : 0.8,
+      "flickerPeriodVariance" : 0,
+      "flickerIntensityVariance" : 0
+    }
+  }
+]
